@@ -93,7 +93,15 @@ php /{path to repo}/Examples/ServicesExample.php --service "Example" --method "e
 
 It should print out the path of execution and a normal response. Notice that Example_Alt_Class is used to implement the Example Service instead of the Example_Class. In this implementation of the Example service, this method is a publically accessable method.
 
+7) Auto Discovery: 
+-----
+Run:
+~~~
+php /{path to repo}/Examples/ServicesExample.php --service "Example" --method "argumentList" --serviceArguments '{}' --jsonArgs '{}'
+~~~
 
+It should print out the path of execution and a normal response. Notice that this method doesn't actually exist in any of the implementors! Calling the "argumentList" method lists all of the publically accessible methods for a service, their required and optional parameters, and the defined types of all of these parameters. 
 
+If you cange the 'CURRENT_VERSION' define, you will see the "exampleInternallMethod" method not listed under v1, but listed under v2 (as we have proved earlier). 
 
-
+This is a feature that is made possible and implemented in the Service abstration layer (provided by the ServiceHandler trait).
