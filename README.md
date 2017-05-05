@@ -8,8 +8,6 @@ The system also provides a method to more granually control access to public met
 
 I have included some examples to demonstrate the capabilities and features of the system, and included examples below. 
 
-For more information and back story on why I created this, please check out my blog ([here] (http://blog.ihitbuttons.com/)).
-
 # Examples:
 
 1) Call the "exampleExternalMethod" in the ([Example Class](https://github.com/ihitbuttons/Classes_As_Services/blob/master/Services/Example/Implementors/Example_Class.php)): 
